@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event Example</title>
+    <style>
+        /* CSS styling for the paragraph element */
+        #some-paragraph {
+            font-size: 20px;
+            color: blue;
+            cursor: pointer; /* Adding a pointer cursor for better UX */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML content -->
+    <p id="some-paragraph">This is a paragraph.</p>
+
+    <!-- JavaScript code -->
+    <script>
+        // JavaScript code can be included here to interact with the HTML document
+        var p = document.getElementById('some-paragraph');
+        
+        // Adding a click event listener to the paragraph
+        p.addEventListener('click', function(event) {
+            p.innerHTML = 'You clicked it!';
+        });
+    </script>
+
+</body>
+</html>
